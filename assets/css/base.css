@@ -1,0 +1,114 @@
+:root {
+    --primary-color: #3fd0d4;
+    --white-color:#fff;
+    --black-color:#000;
+    --text-color1:#212121;
+    --text-color2:#505050;
+    --text-color3:#A9A9A9;
+
+    --header-height: 80px;
+}
+
+* {
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+    line-height: 1.6rem;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+.satisfy-font {
+    font-family: 'Satisfy', cursive;
+}
+
+.line-hover {
+    position: relative;
+}
+
+
+.line-hover::after {
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    content: "";
+    display: block;
+    border-bottom:2px solid var(--primary-color);
+    width: 0%;
+    opacity: 0;
+    background-color: var(--primary-color);
+    transition: width ease-out 0.3s,
+    opacity ease-in-out 0.3s;
+}
+
+.line-hover.line-hover--white::after {
+    border-bottom:2px solid var(--white-color);
+}
+
+.active-live-hover:hover > .line-hover::after {
+    opacity: 1;
+    width: 100%;
+}
+
+.pagination-dot {
+    display:flex;
+    justify-content: center;
+    padding-bottom: 115px;
+}
+
+.pagination-dot__item {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: var(--primary-color);
+    opacity: 0.5;
+    margin: 0 8px;
+    transition: opacity ease-out 0.2s;
+    cursor: pointer;
+}
+
+.pagination-dot__itemt:hover {
+    opacity: 1;
+}
+
+.pagination-dot__item--active {
+    opacity: 1;
+}
+
+@keyframes dropDown {
+    0% {
+        opacity: 0;
+        max-height: 0;
+        overflow: hidden;
+    }
+
+    30% {
+        opacity: 1;
+    }
+
+    100% {
+        max-height: 100vh;
+        overflow: hidden;
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+

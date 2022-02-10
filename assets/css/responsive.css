@@ -1,0 +1,137 @@
+
+/* fix PC low resolution */
+@media (min-width: 1024px) and (max-width: 1200px) {
+    .header__navbar-item {
+        padding: 0 22px;
+    }
+
+    .location__item {
+        margin: 0px 8px 32px 8px;
+    }
+}
+/* mobile & tablet */
+@media (max-width: 1023px) {
+    :root {
+        --header-height: 70px;
+        -webkit-tap-highlight-color: transparent;
+    }
+
+    .hide-on-mobile-tablet {
+        display: none;
+    }
+
+    .header-mobile {
+        display: flex;
+    }
+
+    .video__player {
+        max-height: calc(100% - 300px);
+    }
+
+    .review__container {
+        background-attachment: inherit;
+    }
+
+    .review__item {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .review__user-avatar {
+        margin-bottom: 16px;
+        margin-right: 0;
+    }
+
+    .review__user-comment {
+        text-align: center;
+    }
+
+    .location__item {
+        margin: 0px 8px 32px 8px;
+    }
+    
+    .footer__content {
+        padding-bottom: 0;
+    }
+
+    .footer__item {
+        margin-bottom: 60px;
+    }
+}
+/* tablet */
+@media (min-width: 740px) and (max-width: 1023px) {
+    .hide-on-tablet {
+        display: none;
+    }
+
+    .slider__heading {
+        font-size: 7.8rem;
+        line-height: 7.8rem;
+    }
+
+    .slider__desc {
+        padding: 0 96px;
+        margin-top: 20px;
+        line-height: 2.4rem;
+    }
+}
+/* mobile */
+@media (max-width: 739px) {
+    .hide-on-mobile {
+        display: none;
+    }
+
+    .header-mobile {
+        --header-mobile-container-width: calc(100% - 60px);
+    }
+
+    .slider__heading {
+        font-size: 3.5rem;
+        line-height: 3.5rem;
+    }
+
+    .slider__heading.slder__heading--small {
+        font-size: 3rem;
+    }
+
+    .slider__desc {
+        font-size: 1.5rem;
+        padding: 0 70px;
+    }
+
+    .place__list {
+        padding: 60px 70px 140px 70px;
+    }
+
+    .location__container {
+        padding:  50px 40px 0 40px;
+    }
+    
+    .footer__content {
+        padding: 70px 40px 0 40px;
+    }
+
+    .footer__logo-link {
+        text-align: center;
+    }
+
+    .auth-form__body {
+        padding: 25px 25px 20px 25px;
+    }
+
+    .auth-fomr__input-wrap {
+        padding: 12px 18px;
+    }
+
+    .auth-fomr__remember-wrap {
+        margin: 10px 0;
+    }
+    
+    .auth-fomr__control-btn {
+        margin-top: 18px;
+    }
+
+    .auth-fomr__footer-text {
+        margin: 0 0 12px 0;
+    }
+}

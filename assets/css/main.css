@@ -1590,14 +1590,14 @@
     max-width: 100%;
 }
 
-::placeholder {
+.footer__input::placeholder {
     color: var(--white-color);
     opacity: 1;
 }
-:-ms-input-placeholder {
+.footer__input::-ms-input-placeholder {
     color: var(--white-color);
 }
-::-ms-input-placeholder {
+.footer__input::-ms-input-placeholder {
     color: var(--white-color);
 
 }

@@ -77,6 +77,10 @@
 }
 /* mobile */
 @media (max-width: 739px) {
+     :root {
+        --header-height: 55px;
+    }
+    
     .hide-on-mobile {
         display: none;
     }

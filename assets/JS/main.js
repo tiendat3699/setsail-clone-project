@@ -97,7 +97,7 @@ function loopSlideTour(index = 0) {
     timerTour = setInterval(function() {
         nextPageTour(index);
         index += 1;
-        if(index > rowOfTourChildElementCount - 4) {
+        if(index > rowOfTourChildElementCount - quantityItemInOnePageTour()) {
             index = 0;
         }
     }, 5000)
@@ -195,7 +195,7 @@ function loopSlideReview(index = 0) {
     timerReview = setInterval(function() {
         nextPageReview(index);
         index += quantityItemInOnePageReview();
-        if(index > rowOfReview.childElementCount - 3) {
+        if(index > rowOfReview.childElementCount - quantityItemInOnePageReview()) {
             index = 0;
         }
     }, 5000)
